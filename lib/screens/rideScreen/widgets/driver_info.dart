@@ -30,7 +30,7 @@ class DriverInfo extends StatelessWidget {
                         padding: const EdgeInsets.only(top: 8.0),
                         child: Container(
                             width: 315,
-                            height: 80,
+                            height: 90,
                             decoration: BoxDecoration(
                                 border: Border.all(
                                   color: Colors.grey,
@@ -53,19 +53,25 @@ class DriverInfo extends StatelessWidget {
                                     children: [
                                       const IconWidget(
                                           icon: Icons.local_taxi_rounded),
-                                      Column(
-                                        children: [
-                                          Text('John Doe',
-                                              style: Styles.boldnormaltext),
-                                          Text(
-                                            'Biratnagar',
-                                            style: Styles.smallgreytext,
-                                          )
-                                        ],
+                                      Padding(
+                                        padding: const EdgeInsets.all(8.0),
+                                        child: Column(
+                                          mainAxisAlignment:
+                                              MainAxisAlignment.center,
+                                          children: [
+                                            Text('John Doe',
+                                                style: Styles.boldnormaltext),
+                                            Text(
+                                              'Biratnagar',
+                                              style: Styles.smallgreytext,
+                                            )
+                                          ],
+                                        ),
                                       )
                                     ],
                                   ),
                                   Column(
+                                    mainAxisAlignment: MainAxisAlignment.center,
                                     children: [
                                       const Image(
                                           image: AssetImage(
